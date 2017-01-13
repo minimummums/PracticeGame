@@ -174,10 +174,6 @@ if(lives &gt; 0){
     instance_create(room_width/2,576,obPlayer);
     health = 3;
     global.set = false;
-}else{
-    if(global.killCount &gt; global.highScore){
-        global.highScore = global.killCount*10;
-    }
 }
 </string>
           </argument>
@@ -334,6 +330,11 @@ default:
 }
 
 if(!instance_exists(obPlayer)&amp;&amp; !global.set){
+    if(lives == 0){
+        if(global.killCount &gt; global.highScore){
+            global.highScore = global.killCount*10;
+        }
+    }
     alarm[1] = room_speed*1.5;
     global.set =true;
 }

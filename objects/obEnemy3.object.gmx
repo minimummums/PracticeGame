@@ -119,7 +119,7 @@ charge = false;
           <argument>
             <kind>1</kind>
             <string>///shoot
-instance_create(self.x,self.y,obBoltEn1);
+instance_create(self.x,self.y,obBoltEn3);
 </string>
           </argument>
         </arguments>
@@ -140,7 +140,7 @@ instance_create(self.x,self.y,obBoltEn1);
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>50</string>
+            <string>90</string>
           </argument>
           <argument>
             <kind>4</kind>
@@ -172,7 +172,7 @@ if(instance_exists(obPlayer)){
     if(dist &gt; 170 &amp;&amp; !charge){
         self.direction = point_direction(self.x, self.y, obPlayer.x, obPlayer.y)+0.01*(dist) ;
         self.image_angle = point_direction(self.x, self.y, obPlayer.x, obPlayer.y)+90+0.01*(dist);
-        self.speed = 5;
+        self.speed = 3;
     }else {
         charge =true;
         self.speed += 0.5;
@@ -203,6 +203,8 @@ if(instance_exists(obPlayer)){
             <kind>1</kind>
             <string>///esplode
 global.killCount++;
+audio_play_sound(sonBoom, 6, false);
+audio_sound_pitch(sonBoom, 1.5);
 instance_create(self.x, self.y, obExp);
 </string>
           </argument>
@@ -241,6 +243,9 @@ instance_create(self.x, self.y, obExp);
           <argument>
             <kind>1</kind>
             <string>///esplode
+global.killCount++;
+audio_play_sound(sonBoom, 6, false);
+audio_sound_pitch(sonBoom, 1.5);
 instance_create(self.x, self.y, obExp);
 </string>
           </argument>

@@ -114,9 +114,9 @@ ang =0;
           <argument>
             <kind>1</kind>
             <string>///shoot
-instance_create(self.x,self.y,obBoltEn4);
-instance_create(self.x,self.y,obBoltEn5);
-instance_create(self.x,self.y,obBoltEn6);
+instance_create(self.x,self.y,obBoltEn4_1);
+instance_create(self.x,self.y,obBoltEn4_2);
+instance_create(self.x,self.y,obBoltEn4_3);
 </string>
           </argument>
         </arguments>
