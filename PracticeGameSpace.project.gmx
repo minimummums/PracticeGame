@@ -16,6 +16,7 @@
     <sprite>sprites\spLive</sprite>
     <sprite>sprites\spSpace</sprite>
     <sprite>sprites\spBolt</sprite>
+    <sprite>sprites\sprMissile</sprite>
     <sprite>sprites\spEnemy1</sprite>
     <sprite>sprites\spEnemy4</sprite>
     <sprite>sprites\spEnemy3</sprite>
@@ -32,16 +33,16 @@
     <object>objects\obPlayer</object>
     <object>objects\obBolt</object>
     <object>objects\obEnemy1</object>
-    <object>objects\obEnemy4</object>
     <object>objects\obBoltEn1</object>
-    <object>objects\obBoltEn3</object>
-    <object>objects\obBoltEn4</object>
-    <object>objects\obBoltEn6</object>
-    <object>objects\obBoltEn5</object>
-    <object>objects\obExp</object>
-    <object>objects\obExpB</object>
     <object>objects\obEnemy2</object>
     <object>objects\obEnemy3</object>
+    <object>objects\obBoltEn3</object>
+    <object>objects\obEnemy4</object>
+    <object>objects\obBoltEn4_1</object>
+    <object>objects\obBoltEn4_3</object>
+    <object>objects\obBoltEn4_2</object>
+    <object>objects\obExp</object>
+    <object>objects\obExpB</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
