@@ -120,6 +120,7 @@ self.speed += 1;
             <kind>1</kind>
             <string>///esplode
 global.killCount++;
+audio_play_sound(sonBoom, 3, false);
 audio_stop_sound(sonEnDive);
 instance_create(self.x, self.y, obExp);
 </string>
@@ -160,6 +161,7 @@ instance_create(self.x, self.y, obExp);
             <kind>1</kind>
             <string>///esplode
 audio_stop_sound(sonEnDive);
+audio_play_sound(sonBoom, 3, false);
 instance_create(self.x, self.y, obExp);
 </string>
           </argument>

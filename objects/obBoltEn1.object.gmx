@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>obEnemy1</parentName>
+  <parentName>self</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -51,6 +51,7 @@
             <kind>1</kind>
             <string>///Get player direction and go
 audio_play_sound(sonEnBolt,3,false);
+audio_sound_pitch(sonEnBolt, 2);
 if(instance_exists(obPlayer)){
 self.direction = (point_direction(self.x, self.y, obPlayer.x, obPlayer.y)+180)*.2 +180;
 self.image_angle = (point_direction(self.x, self.y, obPlayer.x, obPlayer.y)+180)*.2+90;
