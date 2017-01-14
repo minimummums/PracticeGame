@@ -54,6 +54,8 @@ audio_play_sound(sonEnDive, 2, false);
 if(instance_exists(obPlayer)){
 self.direction = point_direction(self.x, self.y, obPlayer.x, obPlayer.y) ;
 self.image_angle = point_direction(self.x, self.y, obPlayer.x, obPlayer.y) +90;
+}else{
+self.direction = 270;
 }
 </string>
           </argument>
